@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payroll System</title>
+  </head>
+  <body>
+    <h1 id="payrollSystem">Payroll System:</h1>
+
+    <label for="employeeName">Employee Name:</label>
+    <input type="text" name="employeeName" id="employeeName" />
+
+    <br />
+    <label for="hourlyRate">Hourly Rate:</label>
+    <input type="text" name="hourlyRate" id="hourlyRate" />
+
+    <br />
+    <label for="hoursWorked">Hours Worked:</label>
+    <input type="text" name="hoursWorked" id="hoursWorked" />
+
+    <br />
+    <label for="taxPercentage">Tax Percentage:</label>
+    <input type="text" name="taxPercentage" id="taxPercentage" />
+
+    <br />
+    <label for="employmentType">Employment Type:</label>
+    <input id="fullTime" type="radio" name="radio" />Full-Time
+    <input id="partTime" type="radio" name="radio" />Part-Time
+
+    <br />
+    <button onclick="calculateSalary()" id="calculateSalary">
+      Calculate Salary
+    </button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
